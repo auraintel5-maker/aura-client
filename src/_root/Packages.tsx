@@ -29,7 +29,8 @@ const Packages = () => {
         {/* Packages Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
           {packages.map((pkg, i) => {
-            const isPro = (pkg.slug ?? "").toString().toLowerCase() === "pro_pack";
+            const isPro =
+              (pkg.slug ?? "").toString().toLowerCase() === "pro_pack";
             return (
               <motion.div
                 key={i}
@@ -43,7 +44,9 @@ const Packages = () => {
                     : "border-white/10 bg-[#0f0f0f]"
                 }`}
               >
-                <h3 className="text-2xl font-bold mb-3 text-[#FAF9F6]">{pkg.name}</h3>
+                <h3 className="text-2xl font-bold mb-3 text-[#FAF9F6]">
+                  {pkg.name}
+                </h3>
                 <p className="text-[#008B8B] text-3xl font-extrabold mb-6">
                   {pkg.price}
                 </p>
@@ -105,7 +108,7 @@ const Packages = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div> 
+        </motion.div>
 
         {/* Final CTA */}
         <motion.div {...fadeUp} className="mt-32 text-center max-w-2xl mx-auto">
@@ -117,12 +120,16 @@ const Packages = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-[#008B8B] text-black px-6 py-5 text-lg font-semibold hover:bg-[#E5E5E5]"
-             onClick={() => navigate("/packages-billing?mode=essentials_pack")}>
+            <Button
+              className="bg-[#008B8B] text-black px-6 py-5 text-lg font-semibold hover:bg-[#E5E5E5]"
+              onClick={() => navigate("/packages-billing?mode=essentials_pack")}
+            >
               Get Started
             </Button>
-            <Button className="border border-white/20 text-white px-6 py-5 text-lg hover:bg-[#14213D]"
-             onClick={() => navigate("/contact")}>
+            <Button
+              className="border border-white/20 text-white px-6 py-5 text-lg hover:bg-[#14213D]"
+              onClick={() => navigate("/contact")}
+            >
               Talk to Us
             </Button>
           </div>
