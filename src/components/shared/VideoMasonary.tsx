@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useRef } from "react";
-import { videoMockups } from "@/modelDataset";
+import { video_hero_data, videoMockups } from "@/modelDataset";
 
 
 const flickerVariants = {
@@ -41,9 +41,9 @@ const VideoMasonry = () => {
     <section>
       <div className="container text-left my-14">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 [#2F2F2F]">
-          section heading goes here <br />
+          {video_hero_data?.heading} <br />
           <span className="text-[#0F1E3C]">
-            section sub heading goes here
+            {video_hero_data?.sub_heading}
           </span>
         </h2>
       </div>

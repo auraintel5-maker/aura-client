@@ -1,7 +1,9 @@
 import AdCreativesCta from "@/components/shared/AdCreativesCta";
 import DemoVideo from "@/components/shared/DemoVideo";
+import Features from "@/components/shared/Features";
 // import Features from "@/components/shared/Features";
 import Hero from "@/components/shared/Hero";
+import { HighLights } from "@/components/shared/HighLights";
 import Masonary from "@/components/shared/Masonary";
 import VideoMasonry from "@/components/shared/VideoMasonary";
 import WebLayoutWrapper from "@/components/shared/WebLayoutWrapper";
@@ -14,11 +16,11 @@ const Home = () => {
       <Masonary />
       <DemoVideo url={product_demo_video ?? ""} />
       <VideoMasonry />
-      {/* <Features /> */}
+      <Features />
       {/* <Showcase /> */}
-      {/* <section className="py-4">
+      <section className="py-4">
         <HighLights />
-      </section> */}
+      </section>
       {/* <BeforeAndAfterSection /> */}
       <AdCreativesCta />
     </WebLayoutWrapper>

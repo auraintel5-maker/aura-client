@@ -56,14 +56,14 @@ const data = [
   {
     category: "Studio-Ready Visuals",
     title: "High-quality AI-retouched photographs tailored per product.",
-    src: "/assets/mockups/men_kaftan/men_kaftan1.png",
+    src: "https://res.cloudinary.com/dibavvbpi/image/upload/v1769364597/AI_Images_4k_-_Freepik_020125906826_asmrwu.jpg",
     content: <DummyContent />,
     slug: "leadpilot",
   },
   {
     category: "Story & Caption Creation",
     title: "Taglines, captions and social-ready content pinned to each visual.",
-    src: "/assets/mockups/men_tshirt/men_tshirt3.png",
+    src: "https://res.cloudinary.com/dibavvbpi/image/upload/v1773433975/download_8_kkur63.jpg",
     content: <DummyContent />,
     slug: "studiogen",
   },
